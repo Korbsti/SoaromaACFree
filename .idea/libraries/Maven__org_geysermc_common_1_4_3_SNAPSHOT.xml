@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.geysermc:common:1.4.3-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/geysermc/common/1.4.3-SNAPSHOT/common-1.4.3-20211126.154942-57.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/geysermc/common/1.4.3-SNAPSHOT/common-1.4.3-20211126.154942-57-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/geysermc/common/1.4.3-SNAPSHOT/common-1.4.3-20211126.154942-57-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.geysermc.floodgate:api:2.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/geysermc/floodgate/api/2.0-SNAPSHOT/api-2.0-20211127.012735-84.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/geysermc/floodgate/api/2.0-SNAPSHOT/api-2.0-20211127.012735-84-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/geysermc/floodgate/api/2.0-SNAPSHOT/api-2.0-20211127.012735-84-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

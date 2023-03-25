@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SoaromaACFree:jar">
+    <output-path>$PROJECT_DIR$/../../../Random Apps/mcss_win-x86-64_v11.10.0/servers/Anti cheat test sercer/plugins</output-path>
+    <root id="archive" name="SoaromaACFree.jar">
+      <element id="module-output" name="SoaromaACFree" />
+    </root>
+  </artifact>
+</component>

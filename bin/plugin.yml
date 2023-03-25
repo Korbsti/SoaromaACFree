@@ -1,0 +1,29 @@
+name: SoaromaSAC
+version: 1.0.65
+description: Soaroma Simple Anti-Cheat | A lightweight movement anti-cheat 
+author: Korbsti
+main: me.korbsti.soaromaac.Main
+softdepend: [PlaceholderAPI]
+api-version: 1.17
+commands:
+   sacreload:
+   sacnotify:
+   sacgui:
+   sacwarn:
+   sacmute:
+   sackick:
+   sacunban:
+   sacping:
+   sacuser:
+   sacfreeze:
+   sachashclear:
+   sacreport:
+   sacreports:
+   sacppicp:
+   sacreplay:
+   sactps:
+   sacadmin:
+   sacconfigchoose:
+   sacvio:
+   sachistory:
+   
