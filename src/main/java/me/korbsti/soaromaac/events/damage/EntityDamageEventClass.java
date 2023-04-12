@@ -25,6 +25,7 @@ public class EntityDamageEventClass implements Listener {
         if (e.getEntity() instanceof Player) {
             String playerName = e.getEntity().getName();
             PlayerInstance playerInstance = plugin.playerInstances.get(playerName);
+            if(playerInstance == null) return;
             if (playerInstance.lastFallDamage == null) {
                 playerInstance.lastFallDamage = true;
             }

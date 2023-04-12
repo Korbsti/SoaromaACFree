@@ -23,6 +23,7 @@ public class Disabler implements Listener {
         }
         String playerName = player.getName();
         PlayerInstance playerInstance = plugin.playerInstances.get(playerName);
+        if(playerInstance == null) return;
         playerInstance.medianSpeedCounter= new ArrayList<Double>();
         playerInstance.medianYPos= new ArrayList<Integer>();
         playerInstance.hit= false;

@@ -71,6 +71,7 @@ public class Movement {
     public void movementCheck(Player player, double fromX, double fromY, double fromZ, double toX, double toY, double toZ, float pitch, float yaw) {
         try {
             PlayerInstance playerInstance = plugin.playerInstances.get(player.getName());
+            if(playerInstance == null) return;
             String playerName = player.getName();
             if (playerInstance.playerPing == null)
                 playerInstance.playerPing= 0.0;
