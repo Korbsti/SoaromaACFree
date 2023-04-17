@@ -325,11 +325,14 @@ public class Main extends JavaPlugin implements Listener {
 
     public HashMap<String, PlayerInstance> playerInstances = new HashMap<>();
 
-
-
     public NeuralNetwork neuralNetwork;
 
     public HashMap<Material, Double> toolHits = new HashMap<>();
+
+
+    public int lagTask;
+    public BukkitTask otherTask;
+
 
     @Override
     public void onDisable() {
@@ -346,8 +349,12 @@ public class Main extends JavaPlugin implements Listener {
                 }
             }
         }
+
         asyncNearbyBoat.task.cancel();
         asyncNearbyBoat.mainTask.cancel();
+        otherTask.cancel();
+        Bukkit.getScheduler().cancelTask(lagTask);
+
         for (BukkitTask task : Bukkit.getServer().getScheduler().getPendingTasks()) {
             if (task.getOwner() == Bukkit.getPluginManager().getPlugin("SoaromaSAC")) {
                 task.cancel();
@@ -505,8 +512,8 @@ public class Main extends JavaPlugin implements Listener {
             }, 0, clearAllViolationsTimerNum * 20);
         }
         if (checkServerTPS) {
-            Bukkit.getServer().getScheduler().scheduleSyncRepeatingTask(this, new Lag(), 100L, 1L);
-            Bukkit.getServer().getScheduler().runTaskTimer(this, new Runnable() {
+             lagTask =  Bukkit.getServer().getScheduler().scheduleSyncRepeatingTask(this, new Lag(), 100L, 1L);
+            otherTask = Bukkit.getServer().getScheduler().runTaskTimer(this, new Runnable() {
                 /** Long secend; long secstart; int ticks;. */
                 @Override
                 public void run() {
